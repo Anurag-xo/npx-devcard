@@ -2,9 +2,9 @@
   "name": "anurag-xo",
   "version": "1.0.0",
   "description": "Anurag Kumar's Terminal Portfolio Card",
-  "main": "index.js",
+  "main": "card.js",
   "bin": {
-    "anurag-xo": "./index.js"
+    "anurag-xo": "./card.js"
   },
   "author": "Anurag Kumar",
   "license": "MIT",
