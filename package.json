@@ -1,0 +1,22 @@
+{
+  "name": "anurag-xo",
+  "version": "1.0.0",
+  "description": "Anurag Kumar's Terminal Portfolio Card",
+  "main": "index.js",
+  "bin": {
+    "anurag-xo": "./index.js"
+  },
+  "author": "Anurag Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2",
+    "cli-spinners": "^2.6.1",
+    "clear": "^0.1.0",
+    "inquirer": "^8.2.6",
+    "open": "^8.4.0",
+    "ora": "^5.4.1",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  }
+}
