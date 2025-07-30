@@ -1,11 +1,25 @@
 {
-  "name": "anurag-xo",
+  "name": "anuragxo",
   "version": "1.0.0",
   "description": "Anurag Kumar's Terminal Portfolio Card",
-  "main": "card.js",
+  "main": "index.js",
   "bin": {
-    "anurag-xo": "./card.js"
+    "anuragxo": "card.js"
   },
+  "type": "commonjs",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "npx",
+    "cli",
+    "card",
+    "portfolio",
+    "anuragxo",
+    "terminal",
+    "developer",
+    "resume"
+  ],
   "author": "Anurag Kumar",
   "license": "MIT",
   "dependencies": {
@@ -13,10 +27,11 @@
     "chalk": "^4.1.2",
     "cli-spinners": "^2.6.1",
     "clear": "^0.1.0",
+    "figlet": "^1.5.2",
+    "gradient-string": "^2.0.1",
     "inquirer": "^8.2.6",
     "open": "^8.4.0",
     "ora": "^5.4.1",
-    "path": "^0.12.7",
     "request": "^2.88.2"
   }
 }
