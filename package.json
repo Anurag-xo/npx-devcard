@@ -1,6 +1,6 @@
 {
   "name": "anuragxo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Anurag Kumar's Terminal Portfolio Card",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,8 @@
   },
   "type": "commonjs",
   "files": [
-    "index.js"
+    "index.js",
+    "card.js"
   ],
   "keywords": [
     "npx",
@@ -30,6 +31,7 @@
     "figlet": "^1.5.2",
     "gradient-string": "^2.0.1",
     "inquirer": "^8.2.6",
+    "node-fetch": "^2.6.7",
     "open": "^8.4.0",
     "ora": "^5.4.1",
     "request": "^2.88.2"
