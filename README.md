@@ -6,23 +6,8 @@ This is a simple, interactive portfolio card for the command line, built with No
 
 When you run the card, you'll see something like this:
 
-```
-            Anurag Kumar  /  @anuragxo
+<img width="887" height="482" alt="image" src="https://github.com/user-attachments/assets/8215b54f-0f2d-41c0-a9a3-d87b70ef6eff" />
 
-        Role:  DevOps | Linux Admin | Software Engineer
-
-      GitHub:  https://github.com/Anurag-xo
-    LinkedIn:  https://linkedin.com/in/anurag-kumar-b1a790249
-     Twitter:  https://twitter.com/anuragxo1221
-   LeetCode:  https://leetcode.com/Anurag8081
-     Medium:  https://medium.com/@anuragxo
-   Portfolio:  https://notrlyanurag.duckdns.org
-
-         Card:  npx anuragxo
-
-Let’s connect and build something amazing!
-Or at least debug something that shouldn't have broken.
-```
 
 You will then be prompted with a list of actions to choose from.
 
