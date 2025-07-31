@@ -11,6 +11,9 @@ When you run the card, you'll see something like this:
 
 You will then be prompted with a list of actions to choose from.
 
+<img width="698" height="210" alt="image" src="https://github.com/user-attachments/assets/9618a224-0c65-43e6-a627-c1796f34a77d" />
+
+
 ## Installation
 
 You don't need to install anything! You can run this portfolio card directly using `npx`.
