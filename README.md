@@ -23,7 +23,7 @@ You don't need to install anything! You can run this portfolio card directly usi
 To run the portfolio card, open your terminal and type:
 
 ```bash
-npx anurag-xo
+npx anuragxo
 ```
 
 This will fetch and run the script, displaying my portfolio card and an interactive menu of options.
