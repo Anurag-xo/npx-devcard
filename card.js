@@ -88,6 +88,61 @@ const questions = [
         },
       },
       {
+        name: `📊  Show my ${chalk.blueBright.bold("WakaTime Stats")}`,
+        value: async () => {
+          const wakatimeUsername = "@64ab66ef-ca97-4860-b943-191f7f924ed0"; // 👈 Replace if needed
+          const url = `https://wakatime.com/api/v1/users/${wakatimeUsername}/stats/last_7_days`;
+          const loader = ora({
+            text: "Fetching WakaTime stats...",
+            spinner: cliSpinners.dots,
+          }).start();
+
+          try {
+            const res = await fetch(url);
+            if (!res.ok) throw new Error("Stats not available");
+
+            const data = await res.json();
+            const stats = data.data;
+
+            loader.stop();
+
+            console.log(
+              `\n${chalk.blueBright("📊 WakaTime Stats (Last 7 Days):")}`,
+            );
+            console.log(
+              `⏱️  Total Coding Time: ${chalk.green(stats.human_readable_total)}`,
+            );
+
+            console.log(`\n${chalk.white("🔥 Top Languages:")}`);
+            stats.languages.slice(0, 5).forEach((lang) => {
+              console.log(`  ${lang.name}: ${chalk.cyan(lang.text)}`);
+            });
+
+            if (stats.editors && stats.editors.length > 0) {
+              console.log(`\n${chalk.white("💻 Editors Used:")}`);
+              stats.editors.slice(0, 3).forEach((ed) => {
+                console.log(`  ${ed.name}: ${chalk.yellow(ed.text)}`);
+              });
+            }
+
+            if (stats.operating_systems && stats.operating_systems.length > 0) {
+              console.log(`\n${chalk.white("🖥️  Operating Systems:")}`);
+              stats.operating_systems.slice(0, 3).forEach((os) => {
+                console.log(`  ${os.name}: ${chalk.magenta(os.text)}`);
+              });
+            }
+
+            console.log(""); // Clean spacing
+          } catch (error) {
+            loader.stop();
+            console.log(`❌ ${chalk.red("Failed to fetch WakaTime stats.")}`);
+            console.log(
+              `💡 Ensure your WakaTime profile is public: ${chalk.underline("https://wakatime.com/settings/profile")}\n`,
+            );
+          }
+        },
+      },
+      {
         name: `🎁  Surprise Me!`,
         value: () => {
           const facts = [
