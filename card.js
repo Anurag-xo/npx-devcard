@@ -55,11 +55,27 @@ const questions = [
           });
         },
       },
+      // {
+      //   name: `📅  Schedule a ${chalk.redBright.bold("Meeting")}`,
+      //   value: () => {
+      //     open("https://calendly.com/anuragxo/30min");
+      //     console.log("\n📌 Meeting link opened.\n");
+      //   },
+      // },
+      //  Instead use a chat feature bcoz i dont use clandely
       {
-        name: `📅  Schedule a ${chalk.redBright.bold("Meeting")}`,
-        value: () => {
-          open("https://calendly.com/anuragxo/30min");
-          console.log("\n📌 Meeting link opened.\n");
+        name: `📅  ${chalk.redBright.bold("Schedule a Chat")}`,
+        value: async () => {
+          console.log(`\n${chalk.bold("Let’s connect! Here’s how:")}\n`);
+          console.log(`📧 Email: ${chalk.cyan("anuragxo.dev@gmail.com")}`);
+          console.log(`💬 DM me on Twitter/X: ${chalk.cyan("@anuragxo1221")}`);
+          console.log(`🔗 Or use my Calendly (may be down):`);
+          console.log(
+            chalk.gray.underline("https://calendly.com/anuragxo/30min"),
+          );
+          console.log(
+            `\n${chalk.italic("Pro tip: Paste the Calendly link in incognito mode if it fails.")}\n`,
+          );
         },
       },
       {
