@@ -1,5 +1,8 @@
 # Anurag Kumar's Terminal Portfolio Card
 
+[![NPM Version](https://img.shields.io/npm/v/anuragxo)](https://www.npmjs.com/package/anuragxo)
+[![Docker Image](https://img.shields.io/badge/Docker-anuragxo/card-blue)](https://hub.docker.com/r/anuragxo/card)
+
 This is my interactive terminal portfolio, a creative and fun way to get to know me. Built with Node.js, this CLI tool provides quick access to my professional links, allows you to download my resume, and even fetches real-time stats from my GitHub and WakaTime profiles.
 
 It's designed to be a memorable introduction for anyone who loves the command line.
@@ -22,6 +25,22 @@ npx anuragxo
 
 This command fetches and executes the script, displaying my portfolio card and an interactive menu.
 
+## Docker Usage
+
+You can also run the portfolio card using Docker.
+
+1.  **Build the Docker image:**
+
+    ```bash
+    docker build -t anuragxo-card .
+    ```
+
+2.  **Run the Docker container:**
+
+    ```bash
+    docker run -it anuragxo-card
+    ```
+
 ## Features
 
 The interactive menu allows you to:
@@ -39,6 +58,7 @@ The interactive menu allows you to:
 This project is built with a modern, feature-rich stack:
 
 - **[Node.js](https://nodejs.org/):** The runtime environment.
+- **[Docker](https://www.docker.com/):** For containerizing the application.
 - **[chalk](https://github.com/chalk/chalk):** For styling terminal output with vibrant colors.
 - **[boxen](https://github.com/sindresorhus/boxen):** To create the stylish card layout.
 - **[inquirer](https://github.com/SBoudrias/Inquirer.js):** For crafting interactive command-line prompts.
