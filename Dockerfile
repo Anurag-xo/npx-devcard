@@ -7,7 +7,7 @@ COPY package.json card.js ./
 
 RUN npm install --production
 
-LABEL name="anuragxo-card" \
+LABEL name="anuragox-card" \
       maintainer="Anurag Kumar <anuragxo.dev@gmail.com>" \
       version="1.0.2" \
       description="Interactive terminal portfolio card"
