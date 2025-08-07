@@ -32,13 +32,13 @@ You can also run the portfolio card using Docker.
 1.  **Build the Docker image:**
 
     ```bash
-    docker build -t anuragxo-card .
+    docker build -t anuragox-card .
     ```
 
 2.  **Run the Docker container:**
 
     ```bash
-    docker run -it anuragxo-card
+    docker run -it anuragox-card
     ```
 
 ## Features
