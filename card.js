@@ -40,7 +40,7 @@ const questions = [
           }).start();
           const fileName = "anurag-kumar-resume.pdf";
           const fileUrl =
-            "https://drive.google.com/uc?export=download&id=1EfaqUgWBMX3fHxJvhZ_HiI_BLOgQIRN_";
+            "https://drive.google.com/file/d/1Z9VuAaS4zjGlj1ly6bAZPfxLmIbsn9CJ/view?usp=sharing";
           const pipe = request(fileUrl).pipe(
             fs.createWriteStream(`./${fileName}`),
           );
